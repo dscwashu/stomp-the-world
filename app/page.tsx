@@ -1,9 +1,13 @@
+'use client'
+
 import Image from 'next/image'
 import styles from './page.module.css'
+import Button, { ButtonType } from '@/Components/Button'
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Button text={'Test Button'} type={ButtonType.Primary} onClick={() => { console.log('test console log') }} />
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;

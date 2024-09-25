@@ -1,0 +1,320 @@
+body:has(.requires-no-scroll) {
+    overflow: hidden;
+}
+
+/* -------- FONTS -------- */
+
+.h1 {
+    font-size: 52px;
+    font-weight: 300;
+}
+
+.h2 {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+/* -------- BORDER RADIUS -------- */
+
+.cornerRadiusNormal {
+  border-radius: 12px;
+}
+
+.cornerRadiusSmall {
+  border-radius: 2px;
+}
+
+.cornerRadiusMedium {
+  border-radius: 6px;
+}
+
+.cornerRadius-6 {
+  border-radius: 6px;
+}
+
+.cornerRadius-12 {
+  border-radius: 12px;
+}
+
+.cornerRadius-18 {
+  border-radius: 18px;
+}
+
+.cornerRadius-24 {
+  border-radius: 24px;
+}
+
+.cornerRadius-30 {
+  border-radius: 30px;
+}
+
+.cornerRadius-full {
+  border-radius: 1000px;
+}
+
+.largeText {
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.largeTextBold {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.mediumText {
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.mediumTextBold {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.smallText {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.smallTextBold {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* -------- TEXT COLORS -------- */
+
+.greenText {
+    color: #00D767;
+}
+
+.darkGreenText {
+    color: #00933E;
+}
+
+.lightGreenText {
+    color: #00E58A;
+}
+
+.purpleText {
+    color: #7B49FB;
+}
+
+.lightPurpleText {
+    color: #F8F2FD;
+}
+
+.yellowText {
+    color: #FFD51E;
+}
+
+.redText {
+    color: #FF4B5F;
+}
+
+.lightRedText {
+    color: #FFCACB;
+}
+
+.backgroundLightGreyText {
+    color: #F9FCFF;
+}
+
+.backgroundGreyText {
+    color: #F1F6FD;
+}
+
+.borderGreyText {
+    color: #DFDFE2;
+}
+
+.textGreyText {
+    color: #A8B6C7;
+}
+
+.darkGreyText {
+    color: #6A6A6A;
+}
+
+.blackText {
+    color: #1B143D;
+}
+.whiteText {
+    color: #FFFFFF;
+
+}
+
+/* -------- TEXT ALIGN -------- */
+
+.standard-text-align-center {
+    text-align: center;
+}
+
+.standard-text-align-right {
+    text-align: right;
+}
+
+.standard-text-align-left {
+    text-align: left;
+}
+
+/* -------- BACKGROUND COLORS -------- */
+
+.greenBackground {
+    background-color: #00D767;
+}
+
+.darkGreenBackground {
+    background-color: #00933E;
+}
+
+.lightGreenBackground {
+    background-color: #E7FBED;
+}
+
+.purpleBackground {
+    background-color: #7B49FB;
+}
+
+.lightPurpleBackground {
+    background-color: #E9DCF4;
+}
+
+.yellowBackground {
+    background-color: #FFD51E;
+}
+
+.redBackground {
+    background-color: #FF4B5F;
+}
+
+.lightRedBackground {
+    background-color: #FFCACB;
+}
+
+.backgroundLightGreyBackground {
+    background-color: #e9eff9;
+}
+
+.backgroundGreyBackground {
+    background-color: #F1F6FD;
+}
+
+.borderGreyBackground {
+    background-color: #DFDFE2;
+}
+
+.textGreyBackground {
+    background-color: #A8B6C7;
+}
+
+.blackBackground {
+    background-color: #1B143D;
+}
+
+.orangeBackground {
+    background-color: #d47737;
+}
+
+/* -------- BORDER RADIUS -------- */
+
+
+/* -------- CLICKABLE -------- */
+
+.clickable {
+    cursor: auto;
+}
+
+.clickable:hover {
+    cursor: pointer;
+}
+
+.un-clickable {
+    cursor: not-allowed;
+}
+
+/* -------- WIDTH -------- */
+
+.standard-width-full {
+    width: 100%;
+}
+
+.standard-width-screen {
+    width: 100vw;
+}
+
+.standard-width-fit-content {
+    width: fit-content;
+}
+
+/* -------- HEIGHT -------- */
+
+.standard-height-full {
+    height: 100%;
+}
+
+.standard-height-screen {
+    height: 100vh;
+}
+
+.standard-height-fit-content {
+    height: fit-content;
+}
+
+/* -------- POSITION -------- */
+
+.standard-position-absolute {
+    position: absolute;
+}
+
+.standard-position-relative {
+    position: relative;
+}
+
+.standard-position-fixed {
+    position: fixed;
+}
+
+/* -------- OVERFLOW -------- */
+
+.standard-overflow-hidden-x {
+    overflow-x: hidden;
+}
+
+.standard-overflow-hidden-y {
+    overflow-y: hidden;
+}
+
+.standard-overflow-auto-x {
+    overflow-x: auto;
+}
+
+.standard-overflow-auto-y {
+    overflow-y: auto;
+}
+
+.standard-overflow-scroll-x {
+    overflow-x: scroll;
+}
+
+.standard-overflow-scroll-y {
+    overflow-y: scroll;
+}
+
+/* -------- TRANSITION -------- */
+
+.standard-transition-all {
+    transition: all 0.23s ease;
+}
+
+.standard-transition-transform {
+    transition: transform 0.23s ease;
+}
+
+.standard-transition-scale-on-hover:hover {
+    transform: scale(1.05);
+}
+
+.standard-transition-scale-large-on-hover:hover {
+    transform: scale(1.1);
+}
