@@ -1,29 +1,29 @@
 .container {
-    align-items: center;
-    display: flex;
-    cursor: pointer;
-    outline: inherit;
-    color: inherit;
-    border: none;
-    border-radius: 6px;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  outline: inherit;
+  color: inherit;
+  border: none;
+  border-radius: 6px;
 }
 
 .container:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .yellow:hover {
-    background-color: rgb(218, 180, 11);
+  background-color: rgb(218, 180, 11);
 }
 
 .white {
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
-    padding: 8px 20px;
-    background-color: white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 8px 20px;
+  background-color: white;
 }
 
 .white:hover {
-    background-color: rgb(230, 230, 230);
+  background-color: rgb(230, 230, 230);
 }
