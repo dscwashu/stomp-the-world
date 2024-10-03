@@ -1,14 +1,11 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import '@mantine/core/styles.css'
+import { createTheme, MantineProvider } from '@mantine/core'
 
 import './globals.css'
 
-// Import global css files to use standard styles
-// If another layout.tsx overrides, must import standard styles again
-import '../src/Styles/index.css'
-// import '../src/Styles/app.css'
-import '../src/Styles/spacing.css'
-import '../src/Styles/standardFlex.css'
+import Navbar from '@/Components/Navbar/Navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +14,8 @@ export const metadata: Metadata = {
   description: 'DSC 2024 Project Cohort',
 }
 
+const theme = createTheme({})
+
 export default function RootLayout({
   children,
 }: {
@@ -24,7 +23,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <MantineProvider theme={theme} defaultColorScheme='dark'>
+          <Navbar />
+          {children}
+        </MantineProvider>
+      </body>
     </html>
   )
 }

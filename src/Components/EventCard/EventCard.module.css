@@ -1,0 +1,10 @@
+.inner-card{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.image{
+    color: red;
+
+}
