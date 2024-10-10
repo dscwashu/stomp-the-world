@@ -1,19 +1,30 @@
 import styles from './Overview.module.css'
+import Image from 'next/image'
 
 export function Overview() {
   return (
     <div className={styles['overview-block']}>
-      <h1>Overview</h1>
-      <p>
-      Stomp the World serves students in preschool through high school 
-      in the greater St. Louis area through:
+      <div className={styles['overview-text']}>
+        <p>
+          Stomp the World serves students in preschool through high school in
+          the greater St. Louis area through:
+        </p>
+        <ul>
+          <li> Tutoring </li>
+          <li> Dance/movement </li>
+          <li> Travelling </li>
+          <li> After school programs </li>
+          <li> Character education </li>
+        </ul>
+      </div>
 
-      - Tutoring
-      - Dance/movement
-      - Travelling
-      - After school programs
-      - Character education
-      </p>
+      <div className={styles['image']}>
+        <Image
+          width={300}
+          height={300}
+          src='/OverviewPhoto.jpg'
+          alt='overview image'></Image>
+      </div>
     </div>
   )
 }

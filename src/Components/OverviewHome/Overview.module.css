@@ -1,8 +1,19 @@
 .overview-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px;
-    border-radius: 4em;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 50px;
+  border-radius: 4em;
+}
+.overview-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 4em;
+}
+.image {
+  color: red;
+}

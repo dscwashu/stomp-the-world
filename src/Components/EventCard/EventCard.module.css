@@ -1,10 +1,8 @@
-.inner-card{
-    display: flex;
-    flex-direction: row;
+.inner-card {
+  display: flex;
+  flex-direction: row;
 }
 
-
-.image{
-    color: red;
-
+.image {
+  color: red;
 }
