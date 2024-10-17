@@ -1,8 +1,13 @@
-.inner-card {
+.card {
   display: flex;
   flex-direction: row;
+  max-width: 40%;
 }
 
 .image {
-  color: red;
+  border-radius: 20%;
+}
+
+.event {
+  margin-left: 40px;
 }

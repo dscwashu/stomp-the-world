@@ -3,20 +3,21 @@ import Image from 'next/image'
 
 export function EventCard() {
   return (
-    <div id='event-card'>
+    <div className={styles.event}>
       <h1>After School Program</h1>
-      <div className={styles['inner-card']}>
-        <p>
-          placeholder text placeholder text placeholder placeholder placeholder
-          placeholder placeholdeeer
-        </p>
-        <div className={styles['image']}>
+      <div className={styles.card}>
+        <div>
           <Image
-            width={300}
-            height={300}
+            className={styles.image}
+            width={200}
+            height={200}
             src='/after_school_program.jpg'
             alt='after school image'></Image>
         </div>
+        <p>
+          Placeholder placeholder. The placeholder is a placeholder that allows
+          placeholders to hold their place. Sign up <a href=''>here!</a>
+        </p>
       </div>
     </div>
   )

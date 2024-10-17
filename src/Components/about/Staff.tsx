@@ -4,13 +4,13 @@ export function Staff() {
   return (
     <div className='Staff-block'>
       <h1> The Stomping Team </h1>
+      <KevinL />
+      <MarkC />
+      <JessicaS />
       <DwayneR />
       <FeliciaS />
       <JodiM />
       <KaylaA />
-      <KevinL />
-      <MarkC />
-      <JessicaS />
       <TimereL />
     </div>
   )
@@ -19,7 +19,7 @@ export function Staff() {
 function MarkC() {
   return (
     <div className='Staff-block'>
-      <h1> Mark Cohen </h1>
+      <h2> Mark Cohen </h2>
       <p>
         Founder and Executive Director of Stomp the World, has been a classroom
         teacher for 18+ years. During his career, he has seen the need and
@@ -38,7 +38,7 @@ function MarkC() {
 function KevinL() {
   return (
     <div className='Staff-block'>
-      <h1> Kevin Lee </h1>
+      <h2> Kevin Lee </h2>
       <p>
         CO-Founder and Assistant Director of Stomp the World, has been dancing
         since he was 15 years old. Kevin started studying dance in 2005 where he
@@ -51,7 +51,10 @@ function KevinL() {
         groups, and to couples for weddings. Kevin is currently a teaching
         artist with Consuming Kinetics Dance Company (CKDC) and is excited to be
         part of Stomp the World. He is looking forward to fulfilling the mission
-        to the youth across the globe.{' '}
+        to the youth across the globe.Mr. Kevin is currently moving with the
+        children of Cornerstone Center for Early Learning, Flance Early Learning
+        Center, Little Sunshines Playhouse & Preschool (Chesterfield, Creve
+        Coeur, and University City), and SouthSide Early Childhood Center!{' '}
       </p>
       <p> Contact Kevin at Klee@stomptheworld.org </p>
     </div>
@@ -61,7 +64,7 @@ function KevinL() {
 function JessicaS() {
   return (
     <div className='Staff-block'>
-      <h1> Jessica Schlager </h1>
+      <h2> Jessica Schlager </h2>
       Board President, has been teaching children in a preschool setting since
       2010. Because of her background in teaching, she knows the positive impact
       that others can have on a young persons life. Jessica is married and has
@@ -75,7 +78,7 @@ function JessicaS() {
 function TimereL() {
   return (
     <div className='Staff-block'>
-      <h1> Timere Lee </h1>
+      <h2> Timere Lee </h2>
       Board Member of Stomp the World, has been an expanded function oral dental
       assistant for 5years. Timere is known for having a courageous, lively
       personality, and always smiling. Timere is happily married with two boys
@@ -90,7 +93,7 @@ function TimereL() {
 function JodiM() {
   return (
     <div className='Staff-block'>
-      <h1> Jodi Miller </h1>
+      <h2> Jodi Miller </h2>
       Board Member of Stomp the World, had been an active volunteer with STW for
       many years. As Director of Camp Emeth/Youth Engagement at Congregation
       Shaare Emeth for 14 years Jodi has extensive experience in all aspects of
@@ -103,7 +106,7 @@ function JodiM() {
 function DwayneR() {
   return (
     <div className='Staff-block'>
-      <h1> Dwayne Russell </h1>
+      <h2> Dwayne Russell </h2>
       Board Member of Stomp the World, For the last 3 years Ive been blessed
       with the opportunities to travel with great friends and gain new
       adventures with each trip. This is a privilege that I have treasured
@@ -120,7 +123,7 @@ function DwayneR() {
 function FeliciaS() {
   return (
     <div className='Staff-block'>
-      <h1> Felicia Shelby </h1>
+      <h2> Felicia Shelby </h2>
       Board Member of Stomp the World, has been working in the Riverview Gardens
       School District since 2011. She has been at the high school since she
       started. Because of her experience and knowledge as a mother and
@@ -135,7 +138,7 @@ function FeliciaS() {
 function KaylaA() {
   return (
     <div className='Staff-block'>
-      <h1> Kayla Adams </h1>
+      <h2> Kayla Adams </h2>
       Board Member of Stomp the World, has been working in a preschool setting
       since 2014. In 2021 she was honored to be promoted to Assistant Director
       of her center. Kayla loves connecting with families and helping guide

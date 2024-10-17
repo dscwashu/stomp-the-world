@@ -3,10 +3,41 @@
 import { List, Flex } from '@mantine/core'
 import { Carousel } from '@mantine/carousel'
 import { SingleGallery } from '../SingleGallery/SingleGallery'
+import { get } from 'http'
+import { useEffect, useState } from 'react'
+
+export type Event = {
+  name: string
+  rootUrl: string
+  images: Image[]
+}
+
+export type Image = {
+  name: string
+  url: string
+}
 
 export function Gallery() {
+  const [galleryItems, setGalleryItems] = useState<Event[]>([])
+
+  useEffect(() => {
+    async function getAllEvents() {
+      const response = await fetch('api/getEvents', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+      const data = await response.json()
+      setGalleryItems(data.galleryItems)
+    }
+
+    // getAllEvents()
+  }, [])
+
   return (
     <Flex align={'center'} justify={'center'} direction={'column'}>
+      <h1>{}</h1>
       <SingleGallery
         urls={[
           'https://stomptheworld.org/resources/TE_Mitzvah/TE%20Community%20Service%204.JPG',

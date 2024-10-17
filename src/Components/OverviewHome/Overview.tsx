@@ -18,7 +18,7 @@ export function Overview() {
         </ul>
       </div>
 
-      <div className={styles['image']}>
+      <div>
         <Image
           width={300}
           height={300}

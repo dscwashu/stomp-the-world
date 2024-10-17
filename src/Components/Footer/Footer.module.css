@@ -1,0 +1,19 @@
+.headerFooting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footerForm {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

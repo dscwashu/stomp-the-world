@@ -2,6 +2,7 @@
 
 import { Button, Flex, TextInput } from '@mantine/core'
 import { useState } from 'react'
+import React from 'react'
 
 export default function ContactUs() {
   const [name, setName] = useState('')

@@ -6,6 +6,7 @@ import { createTheme, MantineProvider } from '@mantine/core'
 import './globals.css'
 
 import Navbar from '@/Components/Navbar/Navbar'
+import { Footer } from '@/Components/Footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,8 +26,11 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <MantineProvider theme={theme} defaultColorScheme='dark'>
-          <Navbar />
-          {children}
+          <div className='layout'>
+            <Navbar />
+            {children}
+          </div>
+          <Footer />
         </MantineProvider>
       </body>
     </html>
