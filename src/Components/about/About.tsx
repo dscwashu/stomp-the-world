@@ -2,10 +2,11 @@
 
 import styles from './About.module.css'
 import { List } from '@mantine/core'
+import Image from 'next/image'
 
 export function About1() {
   return (
-    <div className='About-block'>
+    <div className={styles.aboutBlock}>
       <h1>Movement</h1>
       <h3> Classes for early childhood learning centers. </h3>
       <List>
@@ -25,7 +26,7 @@ export function About1() {
 
 export function About2() {
   return (
-    <div className='About-block'>
+    <div className={styles.aboutBlock}>
       <h1>Tutoring</h1>
       Affordable in person/online tutoring and homework help. Through tutoring,
       movement, after school programming, and our experiences outside the
@@ -35,23 +36,9 @@ export function About2() {
   )
 }
 
-export function About3() {
-  return (
-    <div className='About-block'>
-      <h1>Contact Us</h1>
-      <List>
-        <List.Item>Name:</List.Item>
-        <List.Item>Email:</List.Item>
-        <List.Item>Phone Number:</List.Item>
-        <List.Item>Message:</List.Item>
-      </List>
-    </div>
-  )
-}
-
 export function About4() {
   return (
-    <div className='About-block'>
+    <div className={styles.aboutBlock}>
       <h1>After School Programming</h1>
       <List>
         <List.Item>Highland Elementary 5th grade class</List.Item>
@@ -64,6 +51,54 @@ export function About4() {
         experiences outside the classroom, we have been able to serve and impact
         over 1,000 children in the greater St. Louis area.{' '}
       </h3>
+    </div>
+  )
+}
+
+export function Image1() {
+  return (
+    <div>
+      <Image
+        width={300}
+        height={300}
+        src='/image (2).png'
+        alt='overview image'></Image>
+    </div>
+  )
+}
+
+export function Image2() {
+  return (
+    <div>
+      <Image
+        width={300}
+        height={300}
+        src='/image (3).png'
+        alt='overview image'></Image>
+    </div>
+  )
+}
+
+export function Image3() {
+  return (
+    <div>
+      <Image
+        width={300}
+        height={300}
+        src='/image (4).png'
+        alt='overview image'></Image>
+    </div>
+  )
+}
+
+export function Image4() {
+  return (
+    <div>
+      <Image
+        width={300}
+        height={300}
+        src='/newImage.png'
+        alt='overview image'></Image>
     </div>
   )
 }

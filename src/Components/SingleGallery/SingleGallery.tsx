@@ -1,19 +1,24 @@
 import { Carousel } from '@mantine/carousel'
 import Image from 'next/image'
 import '@mantine/carousel/styles.css'
+import styles from './SingleGallery.module.css'
 
 export function SingleGallery({ urls }: { urls: string[] }) {
   return (
     <Carousel
       withIndicators
-      height={200}
-      slideSize={{ base: '100%', sm: '50%', md: '33.333333%' }}
-      slideGap={{ base: 0, sm: 'md' }}
-      loop
+      slideSize={{ base: '100%', sm: '50%' }}
+      slideGap={{ base: 'xl', sm: 2 }}
       align='start'>
       {urls.map((url, i) => (
-        <Carousel.Slide key={i}>
-          <Image src={url} alt='' height={300} width={400} />
+        <Carousel.Slide key={i} className={styles.singleGallery}>
+          <Image
+            alt=''
+            src={url}
+            width={200}
+            height={200}
+            style={{ objectFit: 'contain' }}
+          />
         </Carousel.Slide>
       ))}
     </Carousel>

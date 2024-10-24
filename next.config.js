@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'stomptheworld.org',
       },
+      {
+        protocol: 'https',
+        hostname: 'storage.googleapis.com',
+      },
     ],
   },
 }

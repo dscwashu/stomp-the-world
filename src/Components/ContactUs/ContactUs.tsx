@@ -18,7 +18,18 @@ export default function ContactUs() {
   }
 
   return (
-    <Flex align={'center'} justify={'center'} direction={'column'}>
+    <Flex
+      align={'center'}
+      justify={'center'}
+      direction={'row'}
+      wrap={'wrap'}
+      gap={'md'}
+      style={{
+        width: '100%',
+        maxWidth: '800px',
+        margin: '0 auto',
+        padding: '20px',
+      }}>
       <TextInput
         label='Name'
         placeholder='Enter your name'

@@ -2,12 +2,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  text-align: center;
 }
 
 .headerDiv {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footerForm {
@@ -16,4 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px 0;
 }

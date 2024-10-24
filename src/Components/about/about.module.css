@@ -1,8 +1,30 @@
-.about-block {
+.aboutBlock {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 50px;
   border-radius: 4em;
+}
+
+.staffBlock {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  text-align: center;
+}
+
+.singleStaff {
+  padding: 20px;
+  margin: 20px;
+  max-width: 800px;
+  text-align: center;
+  display: flex;
+}
+
+.staffText {
+  padding: 20px;
 }

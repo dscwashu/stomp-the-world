@@ -1,24 +1,43 @@
-import styles from './EventCard.module.css'
-import Image from 'next/image'
+'use client'
 
-export function EventCard() {
+import Link from 'next/link'
+import styles from './EventCard.module.css'
+import { Card, Image, Text, Badge, Button, Group } from '@mantine/core'
+
+interface EventDetails {
+  eventName: string
+  eventContent: string
+  eventLink: string
+  eventImage: string
+}
+
+export default function EventCard({
+  eventName,
+  eventContent,
+  eventLink,
+  eventImage,
+}: EventDetails) {
   return (
-    <div className={styles.event}>
-      <h1>After School Program</h1>
-      <div className={styles.card}>
-        <div>
-          <Image
-            className={styles.image}
-            width={200}
-            height={200}
-            src='/after_school_program.jpg'
-            alt='after school image'></Image>
-        </div>
-        <p>
-          Placeholder placeholder. The placeholder is a placeholder that allows
-          placeholders to hold their place. Sign up <a href=''>here!</a>
-        </p>
-      </div>
-    </div>
+    <>
+      <Card shadow='sm' padding='lg' radius='md' className={styles.card}>
+        <Card.Section>
+          <Image src={eventImage} height={260} alt='Program' />
+        </Card.Section>
+
+        <Group justify='space-between' mt='md' mb='xs'>
+          <Text fw={500}>{eventName}</Text>
+          <Badge color='pink'>Sign up today!</Badge>
+        </Group>
+
+        <Text size='sm' c='dimmed'>
+          {eventContent}
+        </Text>
+        <Link href={eventLink} target='_blank'>
+          <Button color='green' fullWidth mt='md' radius='md'>
+            Click here to sign up
+          </Button>
+        </Link>
+      </Card>
+    </>
   )
 }

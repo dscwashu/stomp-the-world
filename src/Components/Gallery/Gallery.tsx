@@ -1,10 +1,9 @@
 'use client'
 
 import { List, Flex } from '@mantine/core'
-import { Carousel } from '@mantine/carousel'
 import { SingleGallery } from '../SingleGallery/SingleGallery'
-import { get } from 'http'
 import { useEffect, useState } from 'react'
+import styles from './Gallery.module.css'
 
 export type Event = {
   name: string
@@ -18,33 +17,30 @@ export type Image = {
 }
 
 export function Gallery() {
-  const [galleryItems, setGalleryItems] = useState<Event[]>([])
+  const [galleryItems, setGalleryItems] = useState<string[]>([])
 
   useEffect(() => {
     async function getAllEvents() {
-      const response = await fetch('api/getEvents', {
+      const response = await fetch('api/getImages', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
       })
       const data = await response.json()
-      setGalleryItems(data.galleryItems)
+      const items = data.galleryItems.slice(0, 10)
+      setGalleryItems(items)
     }
 
-    // getAllEvents()
+    getAllEvents()
   }, [])
 
   return (
-    <Flex align={'center'} justify={'center'} direction={'column'}>
-      <h1>{}</h1>
-      <SingleGallery
-        urls={[
-          'https://stomptheworld.org/resources/TE_Mitzvah/TE%20Community%20Service%204.JPG',
-          'https://stomptheworld.org/resources/TE_Mitzvah/TE%20Community%20Service%206.JPG',
-        ]}
-      />
-    </Flex>
+    <div className={styles.gallery}>
+      <Flex align={'center'} justify={'center'} direction={'column'}>
+        <SingleGallery urls={galleryItems} />
+      </Flex>
+    </div>
   )
 }
 
