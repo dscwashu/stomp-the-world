@@ -3,7 +3,7 @@ import styles from './Footer.module.css'
 
 export function Footer() {
   return (
-    <footer>
+    <footer className={styles.footerContainer}>
       <div className={styles.headerDiv}>
         <div className={styles.footerForm}>
           <ContactUs />

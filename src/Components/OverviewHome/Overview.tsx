@@ -21,7 +21,7 @@ export function Overview() {
       <div>
         <Image
           width={300}
-          height={300}
+          height={350}
           src='/OverviewPhoto.jpg'
           alt='overview image'></Image>
       </div>
