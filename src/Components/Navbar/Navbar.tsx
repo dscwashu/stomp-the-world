@@ -53,7 +53,6 @@ export default function HeaderSimple() {
         <Container size='md' className={classes.inner}>
           <Group gap={5} visibleFrom='xs'>
           <h1 className={classes.logotext}>Stomp the World</h1>
-
             {items}
           </Group>
           <Burger opened={opened} onClick={toggle} hiddenFrom='xs' size='sm' />

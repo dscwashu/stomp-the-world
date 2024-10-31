@@ -18,8 +18,8 @@
 .image1 {
   border-radius: 4em;
   height: 200px;
+  width: 200px;
 }
-
 
 .imageGroup {
   display: flex;
