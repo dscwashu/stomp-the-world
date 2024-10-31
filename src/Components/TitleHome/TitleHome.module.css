@@ -1,8 +1,22 @@
 .title-block {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 50px;
-  border-radius: 4em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.title-block h1 {
+  display: inline-block;
+  position: relative;
+  animation: slideOnce 1s ease-out forwards;
+  margin: 0 10px; /* Adds space between words */
+}
+
+/* Keyframe animation for single movement */
+@keyframes slideOnce {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px); /* Adjust the distance moved to be subtle */
+  }
 }

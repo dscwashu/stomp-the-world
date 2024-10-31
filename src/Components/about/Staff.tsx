@@ -1,5 +1,6 @@
 import styles from './About.module.css'
 import { Image1, Image2, Image3, Image4 } from './About'
+import Image from 'next/image'
 
 export function Staff() {
   return (
@@ -20,6 +21,9 @@ export function Staff() {
 function MarkC() {
   return (
     <div className={styles.singleStaff}>
+      <div className={styles.staffPhoto}>
+        <Image alt='' width={250} height={300} src='/mark_cohen.jpeg' />
+      </div>
       <div className={styles.staffText}>
         <h2> Mark Cohen </h2>
         <p>
@@ -33,9 +37,14 @@ function MarkC() {
           reality and help us to continue fulfilling our mission to the youth in
           the Saint Louis community.{' '}
         </p>
-        <p> Contact Mark at Mark@stomptheworld.org </p>
+        <p>
+          {' '}
+          Contact Mark at{' '}
+          <a href='mailto:Mark@stomptheworld.org'>
+            Mark@stomptheworld.org
+          </a>{' '}
+        </p>
       </div>
-      <Image1 />
     </div>
   )
 }
@@ -43,6 +52,9 @@ function MarkC() {
 function KevinL() {
   return (
     <div className={styles.singleStaff}>
+      <div className={styles.staffPhoto}>
+        <Image alt='' width={250} height={300} src='/kevin_lee.png' />
+      </div>
       <div className={styles.staffText}>
         <h2> Kevin Lee </h2>
         <p>
@@ -63,7 +75,13 @@ function KevinL() {
           Playhouse & Preschool (Chesterfield, Creve Coeur, and University
           City), and SouthSide Early Childhood Center!{' '}
         </p>
-        <p> Contact Kevin at Klee@stomptheworld.org </p>
+        <p>
+          {' '}
+          Contact Kevin at{' '}
+          <a href='mailto:Klee@stomptheworld.org'>
+            Klee@stomptheworld.org
+          </a>{' '}
+        </p>
       </div>
     </div>
   )
@@ -72,6 +90,15 @@ function KevinL() {
 function JessicaS() {
   return (
     <div className={styles.singleStaff}>
+      <div className={styles.staffPhoto}>
+        <Image
+          alt=''
+          object-fit='contain'
+          width={250}
+          height={300}
+          src='/jessica_schlager.jpg'
+        />{' '}
+      </div>
       <div className={styles.staffText}>
         <h2> Jessica Schlager </h2>
         Board President, has been teaching children in a preschool setting since
@@ -89,6 +116,15 @@ function JessicaS() {
 function TimereL() {
   return (
     <div className={styles.singleStaff}>
+      <div className={styles.staffPhoto}>
+        <Image
+          alt=''
+          object-fit='contain'
+          width={250}
+          height={300}
+          src='/timere_lee.jpg'
+        />{' '}
+      </div>
       <div className={styles.staffText}>
         <h2> Timere Lee </h2>
         Board Member of Stomp the World, has been an expanded function oral
@@ -106,6 +142,13 @@ function TimereL() {
 function JodiM() {
   return (
     <div className={styles.singleStaff}>
+      <Image
+        alt=''
+        object-fit='contain'
+        width={250}
+        height={300}
+        src='/jodi_miller.jpg'
+      />{' '}
       <div className={styles.staffText}>
         <h2> Jodi Miller </h2>
         Board Member of Stomp the World, had been an active volunteer with STW
@@ -122,6 +165,13 @@ function JodiM() {
 function DwayneR() {
   return (
     <div className={styles.singleStaff}>
+      <Image
+        alt=''
+        object-fit='contain'
+        width={250}
+        height={300}
+        src='/felicia_shelby.JPEG'
+      />{' '}
       <div className={styles.staffText}>
         <h2> Dwayne Russell </h2>
         Board Member of Stomp the World, For the last 3 years Ive been blessed
@@ -142,6 +192,7 @@ function DwayneR() {
 function FeliciaS() {
   return (
     <div className={styles.singleStaff}>
+      <div className={styles.staffPhoto}>{/* <Image1 /> */}</div>
       <div className={styles.staffText}>
         <h2> Felicia Shelby </h2>
         Board Member of Stomp the World, has been working in the Riverview

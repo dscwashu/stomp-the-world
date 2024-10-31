@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Container, Group, Burger } from '@mantine/core'
+import { Container, Group, Burger, Flex } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import classes from './Navbar.module.css'
 import { useRouter } from 'next/navigation'
@@ -47,14 +47,18 @@ export default function HeaderSimple() {
   ))
 
   return (
+    
     <header className={classes.header}>
-      <Container size='md' className={classes.inner}>
-        <Group gap={5} visibleFrom='xs'>
-          {items}
-        </Group>
+        <Flex direction='row' justify='flex-start' align='fl'>
+        <Container size='md' className={classes.inner}>
+          <Group gap={5} visibleFrom='xs'>
+          <h1 className={classes.logotext}>Stomp the World</h1>
 
-        <Burger opened={opened} onClick={toggle} hiddenFrom='xs' size='sm' />
-      </Container>
-    </header>
+            {items}
+          </Group>
+          <Burger opened={opened} onClick={toggle} hiddenFrom='xs' size='sm' />
+        </Container>
+        </Flex>
+      </header>
   )
 }

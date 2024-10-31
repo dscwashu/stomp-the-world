@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
 .layout {
   min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 html * {
-  font-family: sans-serif !important;
+  font-family: 'Cabin', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+:root {
+  --background-color: #edf2f2;
+  --text-color: #000;
+  --secondary-color: #0d2b52;
+  --green-color: #32613d;
 }
