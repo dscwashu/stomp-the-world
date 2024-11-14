@@ -19,10 +19,6 @@ export default function Page() {
       <About2 />
       <About4 />
       <Staff />
-      <Image1 />
-      <Image2 />
-      <Image3 />
-      <Image4 />
     </div>
   )
 }
