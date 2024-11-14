@@ -1,10 +1,12 @@
 .mission-block {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
   padding: 10px;
   border-radius: 4em;
+  gap:200px;
+  
 }
 .mission-text {
   display: flex;
@@ -13,6 +15,8 @@
   flex-direction: row;
   padding: 10px;
   border-radius: 4em;
+  
+  font-size:24px;
 }
 
 .image1 {
@@ -27,12 +31,13 @@
   align-items: center;
   flex-direction: row;
   border-radius: 4em;
+  gap:20px;
 }
 
 .mission-group2 {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
   border-radius: 4em;
 }

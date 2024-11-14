@@ -6,7 +6,7 @@ export function Overview() {
     <div className={styles['overview-block']}>
       <div className={styles['overview-text']}>
         <p>
-          Stomp the World serves students in preschool through high school in
+          Stomp the World serves students <br></br> in preschool through high school <br></br> in
           the greater St. Louis area through:
         </p>
         <ul>

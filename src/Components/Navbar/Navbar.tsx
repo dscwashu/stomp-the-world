@@ -23,6 +23,10 @@ const pages = [
     label: 'About Us',
     link: '/about',
   },
+  {
+    label: 'Donate',
+    link: '/donate',
+  },
 ]
 
 export default function HeaderSimple() {
@@ -35,7 +39,7 @@ export default function HeaderSimple() {
     <a
       key={page.label}
       href={page.link}
-      className={classes.link}
+      className={`${classes.link} ${page.label === 'Donate' ? classes.donateButton : ''}`}
       data-active={active === page.link || undefined}
       onClick={(event) => {
         event.preventDefault()
@@ -47,17 +51,20 @@ export default function HeaderSimple() {
   ))
 
   return (
-    
     <header className={classes.header}>
-        <Flex direction='row' justify='flex-start' align='fl'>
-        <Container size='md' className={classes.inner}>
-          <Group gap={5} visibleFrom='xs'>
-          <h1 className={classes.logotext}>Stomp the World</h1>
-            {items}
-          </Group>
-          <Burger opened={opened} onClick={toggle} hiddenFrom='xs' size='sm' />
-        </Container>
-        </Flex>
-      </header>
+      <div className={classes.leftContainer}>
+        <h1 className={classes.logotext}>
+          <span>Stomp</span>
+          <span>the</span>
+          <span>World</span>
+        </h1>
+      </div>
+      <Container size="md" className={classes.inner}>
+        <Group gap={10} visibleFrom="xs">
+          {items}
+        </Group>
+        <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+      </Container>
+    </header>
   )
 }

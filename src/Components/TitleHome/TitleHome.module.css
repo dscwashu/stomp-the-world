@@ -1,22 +1,68 @@
+/*
 .title-block {
   display: flex;
   overflow: hidden;
   white-space: nowrap;
+  background-color: aliceblue;
+}
+
+.title-black h1{
+  display: inline-block;
+  position: relative;
+  margin: 0 10px; 
+}
+*/
+
+.title-block {
+  width: 100vw;
+  background-color: rgb(34, 206, 215);
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  justify-content: center; 
+  align-items: center;
+  font-size: 2rem; 
 }
 
 .title-block h1 {
   display: inline-block;
   position: relative;
-  animation: slideOnce 1s ease-out forwards;
-  margin: 0 10px; /* Adds space between words */
+  margin: 0 10px;
+  animation: stomp 0.5s ease-in-out infinite; 
 }
 
-/* Keyframe animation for single movement */
+
+@keyframes stomp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1) translateY(-5px); 
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+/*old animation
+
+/*
+.title-block h1 {
+  display: inline-block;
+  position: relative;
+  animation: slideOnce 1s ease-out forwards;
+  margin: 0 10px; 
+}
+
+
 @keyframes slideOnce {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(10px); /* Adjust the distance moved to be subtle */
+    transform: translateX(10px); 
   }
 }
+*/

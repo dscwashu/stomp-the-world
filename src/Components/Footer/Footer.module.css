@@ -1,6 +1,5 @@
 .footerContainer{
   background-color: var(--secondary-color);
-
 }
 
 .headerFooting {
@@ -32,4 +31,14 @@
   width: 100%;
   max-width: 500px;
   margin: 20px 0;
+}
+.contactTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-color); /* Adjust color as needed */
+  text-align: center;
+}
+.footerLogo {
+  max-width: 150px; /* Adjust size as needed */
+  margin-left: auto; /* Aligns logo to the far right */
 }
