@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation'
 const pages = [
   {
     label: 'Home',
-    link: '/home',
+    link: '/',
   },
   {
     label: 'Programs and Events',
@@ -22,10 +22,6 @@ const pages = [
   {
     label: 'About Us',
     link: '/about',
-  },
-  {
-    label: 'Donate',
-    link: '/donate',
   },
 ]
 
@@ -59,11 +55,11 @@ export default function HeaderSimple() {
           <span>World</span>
         </h1>
       </div>
-      <Container size="md" className={classes.inner}>
-        <Group gap={10} visibleFrom="xs">
+      <Container size='md' className={classes.inner}>
+        <Group gap={10} visibleFrom='xs'>
           {items}
         </Group>
-        <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+        <Burger opened={opened} onClick={toggle} hiddenFrom='xs' size='sm' />
       </Container>
     </header>
   )

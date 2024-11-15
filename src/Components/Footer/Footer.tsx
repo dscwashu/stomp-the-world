@@ -5,15 +5,17 @@ export function Footer() {
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.headerDiv}>
+        <div className={styles.headerFooting}>
+          <h3> 6809 Gravois Ave.Saint Louis, MO.63116 </h3>
+          <h3> (314) 325-2934 </h3> 
+          <h3> stomptheworldorg@gmail.com </h3>
+          <h3> 501(c)(3)non-profit organization (45-3681189)</h3>
+        </div>
         <div className={styles.footerForm}>
-        <h3 className={styles.contactTitle}>Contact Us</h3> {/*Contact Us heading */}
+          <h3 className={styles.contactTitle}>Contact Us</h3>
           <ContactUs />
         </div>
-        <div className={styles.headerFooting}>
-          <h3> Stomp the World </h3>
-          <h3 className={styles.headerFooting}> @2024 </h3>
-        </div>
-        <img src="/logoimage.jpg" alt="Logo" className={styles.footerLogo} />
+        <img src='/logoimage.jpg' alt='Logo' className={styles.footerLogo} />
       </div>
     </footer>
   )

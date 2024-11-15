@@ -3,6 +3,7 @@ import {
   About1,
   About2,
   About4,
+  AboutPage,
   Image1,
   Image2,
   Image3,
@@ -13,12 +14,5 @@ import ContactUs from '@/Components/ContactUs/ContactUs'
 import type { MantineThemeOverride } from '@mantine/core'
 
 export default function Page() {
-  return (
-    <div>
-      <About1 />
-      <About2 />
-      <About4 />
-      <Staff />
-    </div>
-  )
+  return <AboutPage />
 }

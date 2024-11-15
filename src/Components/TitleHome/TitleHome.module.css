@@ -15,7 +15,6 @@
 
 .title-block {
   width: 100vw;
-  background-color: rgb(34, 206, 215);
   display: flex;
   overflow: hidden;
   white-space: nowrap;
