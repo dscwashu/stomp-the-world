@@ -7,14 +7,14 @@ import { Card, Image, Text, Badge, Button, Group } from '@mantine/core'
 interface EventDetails {
   eventName: string
   eventContent: string
-  eventLink: string
+  eventContent2: string
   eventImage: string
 }
 
-export default function EventCard({
+export default function Program({
   eventName,
   eventContent,
-  eventLink,
+  eventContent2,
   eventImage,
 }: EventDetails) {
   return (
@@ -26,17 +26,17 @@ export default function EventCard({
 
         <Group justify='space-between' mt='md' mb='xs'>
           <Text className={styles.header} fw={500}>{eventName}</Text>
-          <Badge color='pink'>Sign up today!</Badge>
+          <Badge color='pink'>Contact us to sign up!</Badge>
         </Group>
 
         <Text className={styles.text} size='m'>
           {eventContent}
         </Text>
-        <Link href={eventLink} target='_blank'>
-          <Button className={styles.button} fullWidth mt='md' radius='md'>
-            Click here to sign up
-          </Button>
-        </Link>
+        <br></br>
+        <Text className={styles.text} size='m'>
+          {eventContent2}
+        </Text>
+        
       </Card>
     </>
   )
