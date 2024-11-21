@@ -7,9 +7,9 @@ export function MissionHome() {
     <div className={styles['mission-block']}>
       <div className={styles['image1']}>
         <Image
-          width={200}
-          height={200}
-          src='/PCS After School 1.jpeg'
+          width={370}
+          height={350}
+          src='/after_school_program.jpg'
           alt='overview image'
         />
       </div>
@@ -17,22 +17,22 @@ export function MissionHome() {
       <div className={styles['mission-group2']}>
         <div className={styles['imageGroup']}>
           <Image
-            width={200}
-            height={200}
-            src='/MissionImage.png'
+            width={350}
+            height={250}
+            src='/MissionImage.jpg'
             alt='Mission image'
           />
           <Image
-            width={200}
-            height={200}
+            width={250}
+            height={250}
             src='/Cards Game1.jpg'
             alt='overview image'
           />
         </div>
         <div className={styles['mission-text']}>
           <p>
-            The mission of Stomp the World is to provide educational and life
-            experiences outside of the classroom.
+            The mission of Stomp the World is to provide educational <br></br> 
+            and life experiences outside of the classroom.
           </p>
         </div>
       </div>

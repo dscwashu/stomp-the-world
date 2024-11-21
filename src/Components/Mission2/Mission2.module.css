@@ -1,0 +1,15 @@
+.overall-block{
+    gap:-10px;
+}
+.mission2-block {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: rgb(230, 208, 179);
+    gap: -10px;
+    font-size: 20px;
+  }
+
+.darkblue {
+    background-color: rgb(11, 36, 113);
+  }

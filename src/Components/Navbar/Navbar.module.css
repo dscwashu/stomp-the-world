@@ -1,32 +1,56 @@
 .header {
-  height: rem(80px);
-  margin-bottom: rem(120px);
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  height: rem(120px);
+  margin-bottom: 2em;
   background-color: var(--secondary-color);
   z-index: 1000;
 }
 
 .inner {
-  padding-top: 20px;
+  padding-top: 60px;
   height: rem(56px);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin-left:200px;
+}
+.leftContainer {
+  margin-left:20px;
+  padding-left: 0rem; /* Adjusts padding to move it further left if needed */
 }
 
 .logotext {
-  padding-right: 3em;
-  align-self: flex-start;
+  display: flex;
+  flex-direction: column; /* Stack each word vertically */
+  align-items: flex-start;
+  font-size: 25px;
   color: var(--background-color);
+  margin: 0px; /* Ensures title aligns left */
 }
 
 .link {
   display: block;
   line-height: 1;
-  padding: rem(8px) rem(12px);
+  padding: rem(8px) rem(20px);
   border-radius: var(--mantine-radius-sm);
   text-decoration: none;
 
   @mixin hover {
     color: light-dark(var(--mantine-color-gray-0), var(--background-color));
   }
+}
+
+.donateButton {
+  background-color: green;
+  color: white;
+  padding: 8px 16px; /* Optional: larger padding for button effect */
+  border-radius: 5px; /* Rounder corners */
+  font-weight: bold; /* Make the text bold for emphasis */
+  margin-left: 30px;
+}
+
+.donateButton:hover {
+  background-color: darkgreen; /* Darker shade on hover */
 }
