@@ -1,10 +1,18 @@
-'use client'
+import { TitleHome } from '@/Components/TitleHome/TitleHome'
+import { Vision } from '@/Components/Vision/Vision'
+import { Overview } from '@/Components/OverviewHome/Overview'
+import { MissionHome } from '@/Components/MissionHome/MissionHome'
+import { Mission2 } from '@/Components/Mission2/Mission2'
+import { Flex } from '@mantine/core'
 
-export default function Home() {
+export default function Page() {
   return (
-    <div>
-      <h1>Stomp the World</h1>
-      <p>DSC 2024 Project Cohort</p>
-    </div>
+    <Flex direction={'column'} justify={'center'} align={'center'}>
+      <TitleHome />
+      <Overview />
+      <MissionHome />
+      <Vision />
+      <Mission2 />
+    </Flex>
   )
 }

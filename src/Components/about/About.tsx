@@ -3,6 +3,7 @@
 import styles from './About.module.css'
 import { List } from '@mantine/core'
 import Image from 'next/image'
+import { Staff } from './Staff'
 
 export function About1() {
   return (
@@ -99,6 +100,23 @@ export function Image4() {
         height={300}
         src='/newImage.png'
         alt='overview image'></Image>
+    </div>
+  )
+}
+
+export function AboutPage() {
+  return (
+    <div className={styles.aboutBox}>
+      <div className={styles.aboutImages}>
+        <Image1 />
+        <Image2 />
+        <Image3 />
+        <Image4 />
+      </div>
+      <About1 />
+      <About2 />
+      <About4 />
+      <Staff />
     </div>
   )
 }

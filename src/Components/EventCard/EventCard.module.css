@@ -1,6 +1,7 @@
 .card {
   max-width: 40%;
-  margin-left: 40px;
+  margin: 40px;
+  background-color: teal;
 }
 
 .image {
@@ -9,4 +10,23 @@
 
 .event {
   margin-left: 40px;
+}
+
+.header{
+  color: white;
+  font-weight: 700;
+  font-size:larger;
+}
+
+.button{
+  background-color: var(--green-color);
+}
+
+.page{
+  display: flex;
+  justify-content: center;
+}
+
+.text{
+  color:white;
 }
